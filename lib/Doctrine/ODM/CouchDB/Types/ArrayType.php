@@ -4,7 +4,7 @@ namespace Doctrine\ODM\CouchDB\Types;
 
 class ArrayType extends Type
 {
-    public function convertToCouchDBValue(array $value)
+    public function convertToCouchDBValue($value)
     {
         return json_encode($value);
     }
