@@ -6,11 +6,11 @@ class ArrayType extends Type
 {
     public function convertToCouchDBValue($value)
     {
-        return json_encode($value);
+		return $value;
     }
 
     public function convertToPHPValue($value)
     {
-        return json_decode($value);
+        return $value;
     }
 }
